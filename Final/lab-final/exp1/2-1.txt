@@ -1,0 +1,18 @@
+修改 /etc/network/interfaces 文件，添加如下内容：
+
+auto eth0
+iface eth0 inet static
+address 192.168.2.1
+netmask 255.255.255.0
+
+auto eth1
+iface eth1 inet static
+address 192.168.3.1
+netmask 255.255.255.0 
+
+保存并退出。
+
+重启网络服务：
+
+ifup eth0
+ifup eth1
